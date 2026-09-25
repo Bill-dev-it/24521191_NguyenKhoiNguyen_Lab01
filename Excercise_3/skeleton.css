@@ -56,3 +56,37 @@ header {
         animation: none;
     }
 }
+
+/* T-03B: Live data grid and metadata badges */
+.parts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.part-card {
+    min-width: 0;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.metadata-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 16px 0 0;
+    list-style: none;
+}
+
+.metadata-badges li {
+    padding: 4px 8px;
+    background: #e0f2fe;
+    border-radius: 999px;
+    color: #0c4a6e;
+    font-size: 0.875rem;
+}

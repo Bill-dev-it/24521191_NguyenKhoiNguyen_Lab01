@@ -74,3 +74,56 @@ body {
         scroll-behavior: auto;
     }
 }
+
+/* T-02B: Responsive Flexbox and Grid layout */
+
+body {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--space-md);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding: var(--space-md) 0;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md);
+    list-style: none;
+}
+
+.page-grid {
+    display: grid;
+    gap: var(--space-xl);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--space-lg);
+}
+
+.project-grid > h2,
+.project-grid > p {
+    grid-column: 1 / -1;
+}
+
+.project-card {
+    min-width: 0;
+    padding: var(--space-lg);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+}
+
+@media (min-width: 48rem) {
+    body {
+        padding: var(--space-xl);
+    }
+}

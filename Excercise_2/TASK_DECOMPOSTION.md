@@ -32,3 +32,48 @@ T-02: Responsive Design & Theme Engine
 | T-02A | CSS tokens and global reset | T-01 |
 | T-02B | Responsive Grid layout | T-02A |
 | T-02C | Accessible dark mode engine | T-02B |
+
+## AI Prompt Reproduction Log
+
+Each sub-task is implemented and committed separately. Homework tasks are out of scope.
+
+### T-02A
+
+```text
+Read this task decomposition first. Implement only T-02A: define reusable CSS
+color, typography, spacing, border, and layout tokens under :root, then add a
+global box-sizing reset and base document styles. Use Vanilla CSS only. Do not
+implement responsive layout, JavaScript, or homework. Validate the CSS tokens
+and reset, then commit: feat(css): tokens & reset.
+```
+
+Acceptance check: `style.css` contains `:root`, custom properties, and
+`box-sizing: border-box`.
+
+### T-02B
+
+```text
+Read this task decomposition first. Implement only T-02B: add the responsive
+Flexbox and CSS Grid layout for the existing portfolio page. Reuse the T-02A
+tokens, support a 375px viewport without horizontal scrolling, and do not add
+JavaScript or homework work. Validate the layout, then commit:
+feat(css): responsive grid.
+```
+
+### T-02C
+
+```text
+Read this task decomposition first. Implement only T-02C: add an accessible
+theme switcher with aria-pressed, CSS light/dark tokens, and localStorage key
+theme. Use const by default, avoid inline handlers, and do not implement
+homework. Validate theme persistence, keyboard activation, and zero console
+errors, then commit: feat(js): dark mode engine.
+```
+
+### Execution Record
+
+| Task | Status | Validation | Commit |
+|---|---|---|---|
+| T-02A | Ready to commit | Tokens and reset present | Pending |
+| T-02B | Not started |  |  |
+| T-02C | Not started |  |  |

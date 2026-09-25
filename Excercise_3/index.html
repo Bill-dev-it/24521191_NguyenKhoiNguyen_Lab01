@@ -18,7 +18,8 @@
     </header>
 
     <main id="main-content">
-        <section aria-labelledby="parts-heading"
+        <section class="state-panel loading-state"
+             aria-labelledby="parts-heading"
                  aria-busy="true">
 
             <h2 id="parts-heading">
@@ -65,6 +66,24 @@
                 </li>
             </ul>
         </section>
+
+        <section class="state-panel empty-state"
+                 aria-labelledby="empty-heading"
+                 hidden>
+            <h2 id="empty-heading">No Aircraft Parts Found</h2>
+            <p>No parts currently match the selected maintenance criteria.</p>
+        </section>
+
+        <section class="state-panel error-state"
+                 aria-labelledby="error-heading"
+                 role="alert"
+                 hidden>
+            <h2 id="error-heading">Parts Could Not Be Loaded</h2>
+            <p>We could not reach the parts service. Please try again.</p>
+            <button class="retry-button" type="button">Retry loading parts</button>
+        </section>
     </main>
+
+    <script src="./resilient-state.js" defer></script>
 </body>
 </html>

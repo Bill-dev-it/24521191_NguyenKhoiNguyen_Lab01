@@ -90,3 +90,30 @@ header {
     color: #0c4a6e;
     font-size: 0.875rem;
 }
+
+/* T-03C: Empty and error state presentation */
+.state-panel[hidden] {
+    display: none;
+}
+
+.empty-state,
+.error-state {
+    padding: 24px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+}
+
+.error-state {
+    border-color: #b91c1c;
+}
+
+.retry-button {
+    margin-top: 16px;
+    padding: 8px 16px;
+    border: 2px solid #0f172a;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0f172a;
+    cursor: pointer;
+    font: inherit;
+}

@@ -37,6 +37,17 @@
     --container-max: 1200px;
 }
 
+[data-theme="dark"] {
+    --color-primary: #8ec5ff;
+    --color-primary-hover: #b9dcff;
+    --color-accent: #66e0ed;
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #f8fafc;
+    --color-muted: #cbd5e1;
+    --color-border: #64748b;
+}
+
 /* 2. Global CSS Reset */
 
 *,
@@ -60,6 +71,16 @@ body {
 
     background-color: var(--color-bg);
     color: var(--color-text);
+}
+
+button {
+    padding: var(--space-sm) var(--space-md);
+    color: var(--color-bg);
+    background-color: var(--color-accent);
+    border: 2px solid transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font: inherit;
 }
 
 /* 4. Basic Accessibility */

@@ -74,6 +74,6 @@ errors, then commit: feat(js): dark mode engine.
 
 | Task | Status | Validation | Commit |
 |---|---|---|---|
-| T-02A | Ready to commit | Tokens and reset present | Pending |
-| T-02B | Not started |  |  |
-| T-02C | Not started |  |  |
+| T-02A | Completed | Tokens and reset present | `a9bf208` |
+| T-02B | Completed | Flexbox/Grid and mobile layout checks passed | `4c90acc` |
+| T-02C | Completed | Theme contract and JavaScript syntax checks passed | Pending |
